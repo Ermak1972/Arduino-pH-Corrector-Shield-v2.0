@@ -9,7 +9,7 @@ __________
 pH Corrector Shield это Arduino совместимая плата,
 предназначенная для автоматизации контроля концентрации ионов водорода в жидкой среде
 
-![pH Correcor Shield](http://d63251.cp.hostnet.nl/webspace/httpdocs/cyberplant.ru/images/pH_Corrector_Shield_400.jpg)
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://www.youtube.com/watch?v=vZGudOGjutk)
 
 Дополнительную информацию можно найти на странице проекта [link](http://www.cyberplant.info).
 
@@ -41,7 +41,7 @@ A3 - кнопка Up
 6. Пара перильстических насоса
 7. Дисплей
 
-![pH Correcor Kit](http://ftp.d63251.cp.hostnet.nl/webspace/httpdocs/cyberplant.ru/images/pH_kit_1_400.jpg)
+
 
 # Установка библиотеки
 
