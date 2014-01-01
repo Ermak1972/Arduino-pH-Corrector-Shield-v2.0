@@ -15,7 +15,7 @@ pH Corrector Shield это Arduino совместимая плата,
 
 ### Характеристики платы
 
-[![pH Correcor Shield](http://cyberplant.ru/modules/blogwp/wordpress/wp-content/uploads/2014/01/pH_Corrector_Shield_400.jpg)]
+![pH Correcor Shield](http://cyberplant.ru/modules/blogwp/wordpress/wp-content/uploads/2014/01/pH_Corrector_Shield_400.jpg)
 
 Плата успользует следующие контакты Arduino:
 
