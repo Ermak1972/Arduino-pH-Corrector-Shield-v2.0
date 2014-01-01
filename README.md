@@ -34,6 +34,8 @@ A3 - кнопка Up
 
 # Сборка устройства
 
+![pH Correcor Kit](http://cyberplant.ru/modules/blogwp/wordpress/wp-content/uploads/2014/01/pH_kit_1_400.jpg)
+
 Для сборки устройства понадобятся следующие элементы:
 1. Cyberplant pH Correcnor Shield
 2. Arduino Uno или Arduino Mega 
