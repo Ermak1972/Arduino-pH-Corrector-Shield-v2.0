@@ -32,6 +32,8 @@ A3 - кнопка Up
 
 Питание для насосов берется с Vin Arduino
 
+Файлы печатной платы [gerber](http://cyberplant.ru/modules/blogwp/wordpress/wp-content/uploads/2014/01/pH_Shield_2.5.zip).
+
 # Сборка устройства
 
 ![pH Correcor Kit](http://cyberplant.ru/modules/blogwp/wordpress/wp-content/uploads/2014/01/pH_kit_1_400.jpg)
