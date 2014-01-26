@@ -1,3 +1,4 @@
+
 /*
 USE_GITHUB_USERNAME=cyberplanru
 */
@@ -117,7 +118,7 @@ void loop() {
   //Увелечение парметра pHlow
 if (digitalRead(upPin)== HIGH && m==1)
   {
- 
+
   pHlow += 0.1;
 
   if (pHlow>14)
@@ -126,10 +127,21 @@ if (digitalRead(upPin)== HIGH && m==1)
   }
   delay (100);
   lcd.clear();
-  if (digitalRead(setPin)==HIGH && m==1){   // сохранение в энергонезависимую память
+  }
+  if (digitalRead(setPin)==HIGH && m==1){
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("SAVE");
+  lcd.setCursor(0, 1);
+  lcd.blink();
+  delay(3000);   // сохранение в энергонезависимую память
   EEPROM.updateDouble(addressPhlow, pHlow); 
+  lcd.noBlink();
+  lcd.print("complit");
+  delay(2000);
+  lcd.clear();
   }
-  }
+  
 
 
 if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
@@ -141,9 +153,20 @@ if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
   }
   delay (100);
   lcd.clear();
-  if (digitalRead(setPin)==HIGH && m==2){
-  EEPROM.updateDouble(addressPhhigh, pHhigh);
   }
+  if (digitalRead(setPin)==HIGH && m==2){
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("SAVE");
+  lcd.setCursor(0, 1);
+  lcd.blink();
+  delay(3000);   // сохранение в энергонезависимую память
+  EEPROM.updateDouble(addressPhhigh, pHhigh); 
+  lcd.noBlink();
+  lcd.print("complit");
+  delay(2000);
+  lcd.clear();
+
   }
   
     //+ для dose
@@ -156,9 +179,19 @@ if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
   }
   delay (100);
   lcd.clear();
-  if (digitalRead(setPin)==HIGH && m==3){
-  EEPROM.updateDouble(addressDose, dose);
   }
+  if (digitalRead(setPin)==HIGH && m==3){
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("SAVE");
+  lcd.setCursor(0, 1);
+  lcd.blink();
+  delay(3000);   // сохранение в энергонезависимую память
+  EEPROM.updateDouble(addressDose, dose); 
+  lcd.noBlink();
+  lcd.print("complit");
+  delay(2000);
+  lcd.clear();
   }
   //для pHdelay
       if (digitalRead(upPin)== HIGH && m==4)
@@ -166,13 +199,23 @@ if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
   pHdelay++;
   if (pHdelay>60)//если переменная достигла придела в 60 минут
   {
-  pHdelay=60;//то возвращаем ее к 0
+  pHdelay=0;//то возвращаем ее к 0
   }
   delay (100);
   lcd.clear();
-   if (digitalRead(setPin)==HIGH && m==4){
-  EEPROM.updateInt(addressPhdelay,pHdelay);
-   }
+  }
+  if (digitalRead(setPin)==HIGH && m==4){
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("SAVE");
+  lcd.setCursor(0, 1);
+  lcd.blink();
+  delay(3000);   // сохранение в энергонезависимую память
+  EEPROM.updateInt(addressPhdelay, pHdelay); 
+  lcd.noBlink();
+  lcd.print("complit");
+  delay(2000);
+  lcd.clear();
   }
   // сигнализация светодиодом
       if (digitalRead(upPin)== HIGH && m==5)
@@ -185,10 +228,19 @@ if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
   
   delay (100);
   lcd.clear();
-  if (digitalRead(setPin)==HIGH && m==5)
-  {
-  EEPROM.updateInt(addressL,l);
   }
+  if (digitalRead(setPin)==HIGH && m==5){
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("SAVE");
+  lcd.setCursor(0, 1);
+  lcd.blink();
+  delay(3000);   // сохранение в энергонезависимую память
+  EEPROM.updateInt(addressL, l); 
+  lcd.noBlink();
+  lcd.print("complit");
+  delay(2000);
+  lcd.clear();
   }
   //каллибровка
         if (digitalRead(upPin)== HIGH && m==6)
@@ -204,6 +256,7 @@ if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
   
   if (digitalRead(setPin)==HIGH && m==6)
   {
+  lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print(control[c]);
   lcd.setCursor(0, 1);
@@ -239,10 +292,21 @@ if (digitalRead(upPin)== HIGH && m==2) //+ для рHhigh
   }
   delay (100);
   lcd.clear();
+  }
   if (digitalRead(setPin)==HIGH && m==7){
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("SAVE");
+  lcd.setCursor(0, 1);
+  lcd.blink();
+  delay(3000);   // сохранение в энергонезависимую память
   EEPROM.updateInt(addressR, r);
+  lcd.noBlink();
+  lcd.print("complit");
+  delay(2000);
+  lcd.clear();
   }
-  }
+  
   
       //уменьшение значений для pH Low
     if (digitalRead(downPin)== HIGH && m==1)
