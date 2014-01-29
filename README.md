@@ -1,5 +1,5 @@
 # Arduino pH Corrector Shield v 2.0
-
+[English](https://github.com/cyberplantru/Arduino-pH-Corrector-Shield-v2.0-English)
 Пример кода для автоматического управления уровнем pH.
 __________
 
@@ -17,7 +17,7 @@ pH Corrector Shield это Arduino совместимая плата,
 
 ![pH Correcor Shield](http://cyberplant.ru/modules/blogwp/wordpress/wp-content/uploads/2014/01/pH_Corrector_Shield_400.jpg)
 
-Плата успользует следующие контакты Arduino:
+Плата использует следующие контакты Arduino:
 
 A0 - кнопка Set
 A1 - кнопка Menu
@@ -44,7 +44,7 @@ A3 - кнопка Up
 3. pH Circuit
 4. pH Зонд
 5. Блок питания 
-6. Пара перильстических насоса
+6. Пара перистальтических насоса
 7. Дисплей
 
 
