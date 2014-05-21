@@ -81,5 +81,5 @@ WiFi Shield, Bluetooth Shield.
 # FAQ
 
 Перед использованием Arduino c этим скетчем рекомендуется
-обнулить память EEPROM по этому монуалу: <http://arduino.cc/en/Tutorial/EEPROMClear>
+обнулить память EEPROM по этому мануалу: <http://arduino.cc/en/Tutorial/EEPROMClear>
 В прошивке 2.5 достаточно выполнить функцию RESET ALL в соответствующем меню. 
